@@ -68,23 +68,26 @@
         </section>
     </main>
     <div id="contact">
-        <form class="contact__form">
+        <form class="contact__data">
             <h2>Fale conosco</h2>
             <label for="nome">Nome</label>
-            <input type="text" id="nameid" placeholder="Seu nome" required="required" name="name" />
+            <input type="text" id="nameid" placeholder="Seu nome" required="required" name="name" class="form__text" />
             <br>
             <label for="fone">Telefone</label>
-            <input type="tel" id="phoneid" placeholder="(xx) xxxx-xxxx" name="phone" />
-           <br>
+            <input type="tel" id="phoneid" placeholder="(XX) XXXX-XXXX" name="phone" class="form__text" />
+            <br>
             <label for="email">Email</label>
-            <input type="email" id="emailid" placeholder="seuemail@mail.com" required="required" name="email" />
+            <input type="email" id="emailid" placeholder="seuemail@email.com" required="required" name="email"
+                class="form__text" />
             <br>
             <label for="email">Mensagem</label>
             <textarea placeholder="Digite sua mensagem"></textarea>
             <input type="submit" class="btn" value="Enviar" />
-          </form>
+            <input type="reset" class="btn" value="Limpar">
+        </form>
+
     </div>
-    
+
 
     <footer>
         <div class="footer__texts">
@@ -92,9 +95,9 @@
             <p>(11) 5500-0580</p>
         </div>
     </footer>
-        <div class="copy">
-            <p>© 2023 - Todos os direitos reservados a Hot Pizza.</p>
-        </div>
+    <div class="copy">
+        <p>© 2023 - Todos os direitos reservados a Hot Pizza.</p>
+    </div>
 
 </body>
 
