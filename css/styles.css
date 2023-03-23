@@ -51,18 +51,9 @@ li a:hover {
   transition-timing-function: ease-in-out;
 }
 
-#contact {
-  width: 500px;
-  height: 300px;
-  margin: 50px;
-}
-
 .contact__form {
+  margin: 50px 0 50px 0;
   background-color: rgb(240, 240, 240);
-  border-radius: 30px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
 }
 
 footer {
