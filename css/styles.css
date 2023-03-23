@@ -13,6 +13,7 @@ body {
   flex-direction: row;
 }
 
+
 ul {
   display: flex;
   flex-direction: row;
@@ -27,22 +28,41 @@ li {
   font-size: 18px;
 }
 
-li:hover {
-  padding: 30px;
+a {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+li a:hover {
   color: rgb(255, 187, 0);
-  font-weight: bold;
-  font-size: 18px;
   transition: 0.3s;
 }
 
 .logo {
-  max-width: 180px;
+  width: 180px;
 }
 
 .logo:hover {
-  transform: scale(1.2,1.2);
+  transform: scale(1.2);
   transition: 0.5s;
   transition-timing-function: ease-in-out;
+}
+
+#contact {
+  width: 500px;
+  height: 300px;
+  margin: 50px;
+}
+
+.contact__form {
+  background-color: rgb(240, 240, 240);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 
 footer {
