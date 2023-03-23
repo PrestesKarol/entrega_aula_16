@@ -1,139 +1,28 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="pt-BR">
 <head>
-    <title> Coderhouse - Aula 16</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Hot Pizza | A pizza mais gostosa da cidade!</title>
 </head>
 <body>
-    <nav>
-        <div class="container">
-            <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#cardapio">Cardápio</a></li>
-                <li><a href="#receitas">Receitas</a></li>
-                <li><a href="#galeria">Galeria</a></li>
-                <li><a href="#">Vitrini</a></li>
-                <li><a href="#">Divulgação</a></li>
-                <li><a href="#">Layout</a></li>
+    <header>
+        <nav>
+            <img src="./imagens/logo.svg">
+            <ul>
+                <li>Home</li>
+                <li>Cardápio</li>
+                <li>Contato</li>
             </ul>
-        </div>
-    </nav>
-    <br><br>
-    <section>
-    <div class="cardapio">
-        <a id="cardapio" href="#cardapio"></a>
-        <h1 class="titulo">Cardápio</h1>
-        <div class="grupo">
-            <div class="item">
-                <img src="imagens/gif1.gif" width="50" height="50" alt="ícone">
-                <h2>Pizza de Calabresa</h2>
-                <p>Ingredientes: molho de tomate, queijo, calabresa, cebola e orégano.</p>
-                <p class="preco">R$ 25,00</p>
-            </div>
-            <div class="item">
-                <img src="imagens/gif1.gif" width="50" height="50" alt="ícone">
-                <h2>Pizza Marguerita</h2>
-                <p>Ingredientes: molho de tomate, queijo, tomate e manjericão.</p>
-                <p class="preco">R$ 20,00</p>
-            </div>
-            <div class="item">
-                <img src="imagens/gif1.gif" width="50" height="50" alt="ícone">
-                <h2>Pizza Portuguesa</h2>
-                <p>Ingredientes: molho de tomate, queijo, presunto, cebola, ovo e azeitona.</p>
-                <p class="preco">R$ 30,00</p>
-            </div>
-        </div>
-        <div class="grupo">
-            <div class="item">
-                <img src="imagens/gif2.gif" width="50" height="50" alt="ícone">
-                <h2>Hambúrguer de Carne</h2>
-                <p>Ingredientes: pão, hambúrguer de carne, queijo, alface, tomate e maionese.</p>
-                <p class="preco">R$ 15,00</p>
-            </div>
-            <div class="item">
-                <img src="imagens/gif2.gif" width="50" height="50" alt="ícone">
-                <h2>Hambúrguer de Frango</h2>
-                <p>Ingredientes: pão, hambúrguer de frango, queijo, alface, tomate e maionese.</p>
-                <p class="preco">R$ 12,00</p>
-            </div>
-            <div class="item">
-                <img src="imagens/gif2.gif" width="50" height="50" alt="ícone">
-                <h2>Hambúrguer Vegetariano</h2>
-                <p>Ingredientes: pão, hambúrguer vegetariano, queijo, alface, tomate e maionese vegana.</p>
-                <p class="preco">R$ 18,00</p>
-            </div>
-        </div>
-    </div>
-    </section>
-    <br><br>
-    <section><!-- 
-        <div class="container3">
-            <a id="receitas" href="#receitas"></a>
-            <img src="imagens/01.png" alt="Imagem ilutrativa de um chefe cozinhando.">
-            <h2>Receitas</h2>
-            <div>
-                <h5>Bolo de Cenoura</h5>
-                <p><b> Ingredientes </b></p>
-                <div>
-                    <p>Massa</p>
-                    <ul>
-                        <li> 1/2 xícara (chá) de óleo</li>
-                        <li> 3 cenouras médias raladas</li>
-                        <li> 4 ovos</li>
-                        <li> 2 xícaras (chá) de açúcar</li>
-                        <li> 2 e 1/2 xícaras (chá) de farinha de trigo</li>
-                        <li> 1 colher (sopa) de fermento em pó</li>
-                    </ul>
-                    </p>
-                    <p><b>Confira a receita completa!</b><a href="receitas.html"> Continue a leitura</a></p>
-                </div>-->
-                
-                <div class="receita">
-                    <a id="receitas" href="#receitas"></a>
-                        <img src="imagens/01.png" alt="Imagem da notícia" class="imagem-receita">
-                    <article>
-                      <h2>Bolo de Cenoura</h2>
-                      <p>O bolo de cenoura é uma opção simples e prática para o café da manhã, lanche da tarde ou para uma ocasião especial com famílias e amigos.</p>
-                      <a href="receitas.html">Veja a receita completa!</a>
-                    </article>
-                    <br><br>
-                    <article>
-                        <h2>Panqueca Americana</h2>
-                        <p>Conhecidas como “bolo de enxada” ou “johnnycakes”, as panquecas eram feitas com farinha de trigo sarraceno ou farinha de milho, o fubá.</p>
-                        <a href="receitas.html">Veja a receita completa!</a>
-                      </article>
-                  </div>
-          <div class="galeria">
-            <a id="galeria" href="#galeria"></a>
-            <figure>
-              <img src="imagens/1.jpg" alt="Imagem 1">
-              <figcaption>Legenda da imagem 1</figcaption>
-            </figure>
-            <figure>
-              <img src="imagens/2.jpg" alt="Imagem 2">
-              <figcaption>Legenda da imagem 2</figcaption>
-            </figure>
-            <figure>
-              <img src="imagens/3.jpg" alt="Imagem 3">
-              <figcaption>Legenda da imagem 3</figcaption>
-            </figure>
-            <figure>
-              <video src="imagens/04.mp4" controls></video>
-              <figcaption>Legenda do vídeo 1</figcaption>
-            </figure>
-            <figure>
-              <video src="imagens/05.mp4" controls></video>
-              <figcaption>Legenda do vídeo 2</figcaption>
-            </figure>
-            <figure>
-              <video src="imagens/06.mp4" controls></video>
-              <figcaption>Legenda do vídeo 3</figcaption>
-            </figure>
-          </div>
-    </section>
+        </nav>
+    </header>
 
+
+    <footer>
+        © 2023 - Todos os direitos reservados a Hot Pizza.
+    </footer>
 </body>
-
 </html>
