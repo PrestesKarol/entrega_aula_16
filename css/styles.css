@@ -43,12 +43,11 @@ li a:hover {
 
 .logo {
   width: 180px;
+  transition: 0.5s ease-in-out;
 }
 
 .logo:hover {
   transform: scale(1.2);
-  transition: 0.5s;
-  transition-timing-function: ease-in-out;
 }
 
 .contact__form {
