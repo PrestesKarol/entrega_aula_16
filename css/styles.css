@@ -1,161 +1,33 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18px;
-    background-color: rgb(40 40 41);
-    color: #fff;
-    width: 100%;
+  font-family: 'Rubik', sans-serif;
 }
-
-/* Menu*/
-
-.container {
-    display: grid;
-    grid-template-rows: 50px 1fr 1fr;
-    justify-content: center;
-}
-
-.content {
-    grid-row: 2 / span 2; /* ocupa duas linhas a partir da segunda */
-  }
 
 .menu {
-    list-style: none;
-    /* border: 2px solid #c0c0c0;*/
-    float: left;
-    width: 100%;
-    height: 50px;
-   color: #fff;
+  background-color: rgb(202, 0, 44);
+  width: 100%;
 }
 
-.menu li {
-    position: relative;
-    float: left;
-    border-right: 2px solid #c0c0c0;
+.navbar {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
 
-.menu li a {
-    color: #ffffff;
-    text-decoration: none;
-    padding: 5px 10px;
-    display: block;
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-.menu li a:hover {
-    background: #333;
-    color: #fff;
-    -moz-box-shadow: 0 3px 10px 0 #CCC;
-    box-shadow: 0 3px 10px 0 #ccc;
-    text-shadow: 0px 0px 5px #fff;
+li {
+  padding: 30px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
 }
 
-.menu li ul li{
-    border:2px solid #c0c0c0;
-    display:block;
-    width:100%;
-    }
-
-/* Final do Menu*/
-
-/* Cardápio*/
-
-.cardapio {
-	margin: 0 auto;
-	max-width: 1000px;
-    height: 450px;
-	text-align: center;
-    background-color: rgb(246 131 107);
-    transition: all 2s; 
+.logo {
+  max-width: 200px;
 }
 
-.cardapio:hover {
-    height: 100%; 
-   width: 100%;
-   padding: 100px;
-    background-image: linear-gradient(rgb(246 131 107),rgb(252, 94, 63));
-}
-
-.titulo {
-	font-size: 36px;
-	margin-bottom: 20px;
-}
-
-.grupo {
-	display: flex;
-	flex-wrap:nowrap;
-}
-
-/* Final do Cardápio*/
-
-/* Receitas*/
-
-.receita {
-    float: left;
-    width: 60%;
-  }
-  
-  .receita article {
-    margin: 0;
-    padding: 20px;
-    background-color: rgb(226 76 65);
-  }
-  
-  .receita h2 {
-    font-size: 24px;
-    margin: 0 0 10px 0;
-  }
-  
-  .receita p {
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
-  
-  .receita a {
-    display: block;
-    font-size: 16px;
-    text-align: right;
-    margin-top: 20px;
-  }
-
-  .imagem-receita {
-    float: left;
-    margin-right: 10px;
-  }
-  
-  .leia-mais:hover {
-    background-color: #555;
-    color: #333;
-  }
-
-  /* Final das Receitas*/
-  
-/* Galeria*/
-
-  .galeria {
-    float: right;
-    width: 30%;
-    margin-left: 20px;
-  }
-  
-  .galeria figure {
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-  }
-  
-  .galeria figure img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .galeria figure figcaption {
-    text-align: center;
-    font-size: 14px;
-    margin-top: 10px;
-  }
-
-  /* Final da Galeria*/
