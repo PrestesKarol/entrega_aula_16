@@ -30,15 +30,20 @@ li {
 
 a {
   color: white;
+  transition: 0.2s;
 }
 
 a:visited {
   color: white;
 }
 
+li a {
+  padding-bottom: 10px;
+}
+
 li a:hover {
   color: rgb(255, 187, 0);
-  transition: 0.3s;
+  border-bottom: 3px solid rgb(255, 187, 0);
 }
 
 .logo {
@@ -50,9 +55,65 @@ li a:hover {
   transform: scale(1.2);
 }
 
-.contact__form {
-  margin: 50px 0 50px 0;
-  background-color: rgb(240, 240, 240);
+#contact {
+  background-color: rgb(243, 243, 243);
+}
+
+.contact__data {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+  font-weight: bold
+}
+
+.contact__data h2 {
+  color: rgb(202, 0, 44);
+  font-size: 35px;
+}
+
+label {
+  padding: 10px 0 10px 0;
+  color:  rgb(221, 107, 0);
+}
+
+input {
+  border: 2px solid rgb(202, 0, 44);
+  border-radius: 20px;
+}
+
+.form__text {
+  width: 400px;
+  height: 30px;
+}
+
+textarea {
+  width: 400px;
+  height: 130px;
+  border: 2px solid rgb(202, 0, 44);
+  border-radius: 20px;
+}
+
+::placeholder {
+  color: rgb(112, 112, 112);
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+}
+
+.btn {
+  border-radius: 10px;
+  padding: 20px;
+  background-color: rgb(202, 0, 44);
+  border: 1px solid rgb(255, 145, 0);
+  border-radius: 10px;
+  color: white;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: rgb(255, 145, 0);
+  border: 1px solid rgb(202, 0, 44);
 }
 
 footer {
@@ -60,7 +121,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 180px;
+  height: 120px;
   background-color: rgb(255, 145, 0);
 }
 
