@@ -163,6 +163,10 @@ footer {
   text-align: center;
   transition: .5s;
   box-sizing: border-box;
+  justify-items: center;
+      /* Centraliza na horizontal */
+      align-items: center;
+      /* Centraliza na vertical */
 }
 
 .item:hover {
