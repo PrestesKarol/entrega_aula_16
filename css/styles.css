@@ -55,6 +55,18 @@ li a:hover {
   transform: scale(1.2);
 }
 
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner img {
+  width: 100%;
+
+  height: auto;
+}
+
 #contact {
   background-color: rgb(243, 243, 243);
 }
@@ -101,20 +113,47 @@ textarea {
   font-family: 'Rubik', sans-serif;
 }
 
-.btn {
+.enviar-btn {
   border-radius: 10px;
-  padding: 20px;
-  background-color: rgb(202, 0, 44);
-  border: 1px solid rgb(255, 145, 0);
+  padding: 12px 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: green;
+  border: 3px solid darkgreen;
   border-radius: 10px;
   color: white;
+  font-weight: bold;
   transition: 0.3s;
-
 }
 
-.btn:hover {
-  background-color: rgb(255, 145, 0);
-  border: 1px solid rgb(202, 0, 44);
+.enviar-btn:hover {
+  background-color: darkgreen;
+  border: 3px solid green;
+}
+
+.limpar-btn {
+  border-radius: 10px;
+  padding: 12px 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: none;
+  border: 3px solid black;
+  border-radius: 10px;
+  color: black;
+  font-weight: bold;
+  transition: 0.3s;
+  margin-left: 10px;
+}
+
+.limpar-btn:hover {
+  background-color: rgb(202, 202, 202);
+  border: 3px solid black;
+}
+
+.botoes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {
@@ -157,21 +196,26 @@ footer {
 .item {
   display: inline-block;
   width: 23%;
-  vertical-align: top;
   margin-bottom: 20px;
-  padding: 0 10px;
+  padding: 20px;
   text-align: center;
   transition: .5s;
   box-sizing: border-box;
   justify-items: center;
-      /* Centraliza na horizontal */
-      align-items: center;
-      /* Centraliza na vertical */
+  align-items: stretch;
 }
 
 .item:hover {
   box-shadow: 0px 0px 16px rgb(255, 187, 0);
 }
+
+.text {
+  font-size: 16px;
+  height: auto;
+  margin: 10px; 
+  padding-bottom: 10px;
+}
+
 
 h3 {
   color: rgb(202, 0, 44);
@@ -182,34 +226,30 @@ h3 {
   font-size: auto;
 }
 
-.text {
-  font-size: 16px;
-}
-
 .price {
   font-weight: bold;
   color: rgb(202, 0, 44);
   padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.cart-button {
-  background-color: rgb(255, 187, 0);
-  border: none;
-  color: rgb(202, 0, 44);
-  padding: 12px 24px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+button.cart-button {
+  background-color: green;
+  display: inline block;
+  border-radius: 10px;
+  color: white;
   font-weight: bold;
-  margin: 4px 2px;
-  cursor: pointer;
+  padding: 10px 20px;
+  margin-right: 10px auto;
+  border: none;
 }
 
-.cart-button:active {
-  background-color: rgb(202, 0, 44);
-  transition: .5s;
+button.cart-button:hover {
+  background-color: darkgreen;
 }
+
+
 
 /* Final Food Menu */
 
@@ -265,7 +305,6 @@ h3 {
       height: auto;
       margin-bottom: 10px;
   }
-
 }
 
 /* Final Food Menu Tablet*/
